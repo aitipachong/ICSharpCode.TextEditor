@@ -1,0 +1,664 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)http://surfsky.cnblogs.com/archive/2005/12/30/308517.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>爱上语法高亮控件ICSharpCode.TextEditor ~o~ - surfsky - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/bundle-UandMe.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/surfsky/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/surfsky/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/surfsky/wlwmanifest.xml">
+<script src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'surfsky', cb_enable_mathjax=false;</script>
+<script src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/blog-common.js" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<div id="banner">
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/surfsky/">Kevin Cheng's Yard</a><br>
+		<div class="headerDis">电脑是我的老婆，编程是我的灵魂，代码是我的语言，按键是我在歌唱。</div>
+	</div>
+</div>
+</div>
+<div id="main">
+	<div id="right">
+		<div id="right_content">
+			<div id="mystats">
+				
+					
+<!--done-->
+<div class="blogStats">
+随笔- 75&nbsp;
+文章- 0&nbsp;
+评论- 265&nbsp;
+
+</div>
+				
+			</div>
+			<div id="mylinks">
+				
+<!--done-->
+<a id="MyLinks1_HomeLink" class="menu" href="http://www.cnblogs.com/">博客园</a>&nbsp;&nbsp;<a id="MyLinks1_MyHomeLink" class="menu" href="http://www.cnblogs.com/surfsky/">首页</a>&nbsp;&nbsp;<a id="MyLinks1_NewPostLink" class="menu" rel="nofollow" href="http://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a>&nbsp;&nbsp;<a id="MyLinks1_ContactLink" accesskey="9" class="menu" rel="nofollow" href="http://msg.cnblogs.com/send/surfsky">联系</a>&nbsp;&nbsp;<a id="MyLinks1_Admin" class="menu" rel="nofollow" href="http://i.cnblogs.com/">管理</a>&nbsp;&nbsp;<a id="MyLinks1_Syndication" class="menu" href="http://www.cnblogs.com/surfsky/rss">订阅</a>&nbsp;<a id="MyLinks1_XMLLink" href="http://www.cnblogs.com/surfsky/rss"><img src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/xml.gif" alt="订阅"></a>
+			</div>
+			<div id="topics">
+				
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/surfsky/archive/2005/12/30/308517.html">爱上语法高亮控件ICSharpCode.TextEditor ~o~</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p>&nbsp;&nbsp; 语法高亮控件<span style="color: #ff0000"><strong>ICSharpCode.TextEditor</strong></span>来自开源项目<a href="http://www.sharpdevelop.com/">SharpDevelop</a>，今天才知道，汗！害我白白花费时间自己编了一个SyntaxTextBox（<a href="http://surfsky.cnblogs.com/archive/2005/12/12/295814.html">http://surfsky.cnblogs.com/archive/2005/12/12/295814.html</a>）。不妨发挥拿来主义风格，解剖了它再说！科学研究发现，咳咳，这个控件比较牛了啦～。VisualStudio代码编辑器的功能基本都能实现（包括CodeComplete和tip功能），速度也很快，而且是－－开源免费软件！（大家鼓掌：）&nbsp;，我想我爱上它了^_^，在此严重推荐一下！</p>
+<p><br>&nbsp;&nbsp;&nbsp; 1。<strong>以下是该控件的源代码和自己草编的简单使用例程：<br></strong>&nbsp;&nbsp;&nbsp; ICSharpCode.TextEditor1.1的源代码：【<a href="http://surfsky.cnblogs.com/Files/surfsky/ICSharpCode.TextEditor_1.1.rar" target="">下载</a>】<br>&nbsp;&nbsp;&nbsp; ICSharpCode.TextEditor2.2的源代码：【<a href="http://surfsky.cnblogs.com/Files/surfsky/ICSharpCode.TextEditor_2.2.rar" target="">下载</a>】<br>&nbsp;&nbsp;&nbsp; ICSharpCode.TextEditor3.2的dll：【<a href="http://files.cnblogs.com/surfsky/ICSharpCode.TextEditor.3.2.rar">下载</a>&nbsp;】<br>&nbsp;&nbsp; 自己编的使用例程：【<a href="http://surfsky.cnblogs.com/Files/surfsky/ICSharpCode.TextEditor051230.rar" target="">下载</a>】<br>&nbsp;&nbsp;&nbsp; 注：sharpdevelop从4.0起就用wpf作为界面方案了，对应的代码编辑器是“AvalonEditor”。</p>
+<p><br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; 2。<strong>使用效果：</strong><br>&nbsp;&nbsp;&nbsp;<img hspace="5" align="baseline" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/ICSharpCode.TextEditor.JPG" width="586" height="323" alt=""><br>&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 3。<strong>使用该控件的关键句子：</strong></p>
+<div style="border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid; padding-bottom: 4px; background-color: #eeeeee; padding-left: 4px; width: 98%; padding-right: 5px; font-size: 13px; word-break: break-all; border-top: #cccccc 1px solid; border-right: #cccccc 1px solid; padding-top: 4px"><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt=""><span style="color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000ff">using</span><span style="color: #000000">&nbsp;ICSharpCode.TextEditor;<br><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000ff">using</span><span style="color: #000000">&nbsp;ICSharpCode.TextEditor.Gui.CompletionWindow;<br><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000ff">using</span><span style="color: #000000">&nbsp;ICSharpCode.TextEditor.Document;<br><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000ff">using</span><span style="color: #000000">&nbsp;ICSharpCode.TextEditor.Actions;<br><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt="">&nbsp;&nbsp;&nbsp;&nbsp;<br><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000ff">protected</span><span style="color: #000000">&nbsp;&nbsp;ICSharpCode.TextEditor.TextEditorControl&nbsp;txtContent;<br><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt=""><br><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtContent.Document.HighlightingStrategy&nbsp;</span><span style="color: #000000">=</span><span style="color: #000000">&nbsp;HighlightingStrategyFactory.CreateHighlightingStrategy(</span><span style="color: #000000">"</span><span style="color: #000000">C#</span><span style="color: #000000">"</span><span style="color: #000000">);<br><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtContent.Encoding&nbsp;</span><span style="color: #000000">=</span><span style="color: #000000">&nbsp;System.Text.Encoding.Default;<br><img align="top" src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/None.gif" alt=""></span></div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这几句代码若是不写的话，会无法高亮显示代码且汉字会变乱码的。切记切记，阿弥陀佛～<br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 欢迎大家讨论该控件的使用方法～～</p></div><div id="MySignature" style="display: block;"><p>转载请注明出处：<a href="http://surfsky.cnblogs.com/">http://surfsky.cnblogs.com</a>&nbsp;</p></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/surfsky/category/43169.html">.NET组件控件</a></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+<a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(308517,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+<a id="green_channel_follow" onclick="c_follow();" href="javascript:void(0);">关注我</a>
+<a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a><a id="green_channel_contact" href="http://msg.cnblogs.com/send/surfsky" target="_blank">联系我</a>
+<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/icon_weibo_24.png" alt=""></a>
+<a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+<div id="author_profile_info" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/surfsky/" target="_blank"><img src="./爱上语法高亮控件ICSharpCode.TextEditor _o_ - surfsky - 博客园_files/20141125101721.png" class="author_avatar" alt=""></a>
+<div id="author_profile_detail" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/surfsky/">surfsky</a><br>
+<a href="http://home.cnblogs.com/u/surfsky/followees">关注 - 1</a><br>
+<a href="http://home.cnblogs.com/u/surfsky/followers">粉丝 - 59</a>
+</div>
+</div>
+<div class="clear"></div>
+<div id="author_profile_honor"></div>
+<div id="author_profile_follow">
+    <a href="javascript:void(0);" onclick="c_follow();return false;">+加关注</a>
+</div>
+</div>
+<div id="div_digg">										
+    <div class="diggit" onclick="votePost(308517,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+	<div class="buryit" onclick="votePost(308517,&#39;Bury&#39;)"> 
+		<span class="burynum" id="bury_count">0</span>
+	</div>
+	<div class="clear"></div>	
+	<div class="diggword" id="digg_tips">
+    (请您对文章做出评价)
+    </div>	
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/surfsky/archive/2005/12/29/307709.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/surfsky/archive/2005/12/29/307709.html" title="发布于2005-12-29 22:06">发布数据库连接字符串生成工具</a><br><a href="http://www.cnblogs.com/surfsky/archive/2006/02/07/326397.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/surfsky/archive/2006/02/07/326397.html" title="发布于2006-02-07 09:59">.NET中现有的 ORM 工具（转）</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2005-12-30 21:21</span> <a href="http://www.cnblogs.com/surfsky/">surfsky</a> 阅读(<span id="post_view_count">5841</span>) 评论(<span id="post_comment_count">18</span>)  <a href="http://i.cnblogs.com/EditPosts.aspx?postid=308517" rel="nofollow">编辑</a> <a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#" onclick="AddToWz(308517);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,isLogined=false,cb_blogId=15308,cb_entryId=308517,cb_blogApp=currentBlogApp,cb_blogUserGuid='4248360b-63cf-dd11-9e4d-001cf0cd104b',cb_entryCreatedDate='2005/12/30 21:21:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<!--done-->
+<div class="comment">
+<div class="feedback_area_title">发表评论</div>
+<div class="feedbackNoItems"></div>
+	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#308643" class="layer">#1楼</a><a name="308643" id="comment_anchor_308643"></a> <span class="comment_date">2005-12-31 09:23</span> | <a id="ctl00_CommentList_NameLink_0" href="http://www.cnitblog.com/r.aspx?url=http://chjl.cn" rel="nofllow" target="_blank">阿良[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_308643" class="blog_comment_body">能显示默认的快捷菜单（有复制，粘贴，剪切，全选）吗？</div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#308750" class="layer">#2楼</a><a name="308750" id="comment_anchor_308750"></a>[<span class="louzhu">楼主</span>] <span class="comment_date">2005-12-31 11:08</span> | <a id="a_comment_author_308750" href="http://www.cnblogs.com/surfsky/" target="_blank">surfsky</a> <a href="http://msg.cnblogs.com/send/surfsky" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_308750" class="blog_comment_body">例程中仅展示了TextEditor的最基本功能，现在右键菜单并没有添加上去。
+<br>有空时我会继续完善这个例程，尽量把它的全部功能都挖掘出来^_^～～～</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(308750,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(308750,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_308750_avatar" style="display:none;">http://pic.cnblogs.com/face/11752/20141125101721.png</span><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#308978" class="layer">#3楼</a><a name="308978" id="comment_anchor_308978"></a> <span class="comment_date">2005-12-31 15:22</span> | <a id="a_comment_author_308978" href="http://www.cnblogs.com/songafeng/" target="_blank">阿风的博客</a> <a href="http://msg.cnblogs.com/send/%E9%98%BF%E9%A3%8E%E7%9A%84%E5%8D%9A%E5%AE%A2" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_308978" class="blog_comment_body">太好了，我喜欢，哈哈</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(308978,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(308978,&#39;Bury&#39;,this)">反对(0)</a></div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#309290" class="layer">#4楼</a><a name="309290" id="comment_anchor_309290"></a> <span class="comment_date">2006-01-01 09:08</span> | <a id="ctl00_CommentList_NameLink_3" href="http://ltp.cnblogs.com/" target="_blank">[天道酬勤]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_309290" class="blog_comment_body">呵呵，不错，谢谢搂主啦！</div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#309370" class="layer">#5楼</a><a name="309370" id="comment_anchor_309370"></a> <span class="comment_date">2006-01-01 13:45</span> | <a id="ctl00_CommentList_NameLink_4" target="_blank">tdcq[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_309370" class="blog_comment_body">搂主，请教一下，该控件没有另外的配置文件可以修改代码的样式吗？
+<br>我下载源码的编译通过，但执行到ResourceSyntaxModeProvider.cs的
+<br>Assembly assembly = typeof(SyntaxMode).Assembly;
+<br>Stream syntaxModeStream = assembly.GetManifestResourceStream("SyntaxModes.xml");
+<br>syntaxModeStream 一直是null，抱错。是不是他的dll把配置文件嵌入在里面啦.我如何来修改呢？谢谢</div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#310868" class="layer">#6楼</a><a name="310868" id="comment_anchor_310868"></a>[<span class="louzhu">楼主</span>] <span class="comment_date">2006-01-04 16:35</span> | <a id="a_comment_author_310868" href="http://www.cnblogs.com/surfsky/" target="_blank">surfsky</a> <a href="http://msg.cnblogs.com/send/surfsky" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_310868" class="blog_comment_body">To tdcq: 控件源代码中确实是把配置文件作为资源文件编译的，若要实现自定义配置，可以参考该文章：<a target="_new" href="http://blog.donews.com/shanyou/archive/2005/07/24/478485.aspx">http://blog.donews.com/shanyou/archive/2005/07/24/478485.aspx</a>，但它提供的例程无法下载。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(310868,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(310868,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_310868_avatar" style="display:none;">http://pic.cnblogs.com/face/11752/20141125101721.png</span><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#352859" class="layer">#7楼</a><a name="352859" id="comment_anchor_352859"></a> <span class="comment_date">2006-03-18 14:09</span> | <a id="ctl00_CommentList_NameLink_6" target="_blank">xfxl[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_352859" class="blog_comment_body">我还不会VB2005 那个台兄可不可以做个VB6可以用的啊。最好可以自定义语法！</div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#354205" class="layer">#8楼</a><a name="354205" id="comment_anchor_354205"></a>[<span class="louzhu">楼主</span>] <span class="comment_date">2006-03-20 17:23</span> | <a id="a_comment_author_354205" href="http://www.cnblogs.com/surfsky/" target="_blank">surfsky</a> <a href="http://msg.cnblogs.com/send/surfsky" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_354205" class="blog_comment_body">不干，再捡起以前的东西太痛苦了。
+<br>你可以去codeproject.com上找找也许有你想要的。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(354205,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(354205,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_354205_avatar" style="display:none;">http://pic.cnblogs.com/face/11752/20141125101721.png</span><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#358674" class="layer">#9楼</a><a name="358674" id="comment_anchor_358674"></a> <span class="comment_date">2006-03-25 18:09</span> | <a id="a_comment_author_358674" href="http://www.cnblogs.com/OOspurs/" target="_blank">OOspurs</a> <a href="http://msg.cnblogs.com/send/OOspurs" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_358674" class="blog_comment_body">正点</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(358674,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(358674,&#39;Bury&#39;,this)">反对(0)</a></div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#363104" class="layer">#10楼</a><a name="363104" id="comment_anchor_363104"></a> <span class="comment_date">2006-03-30 22:19</span> | <a id="ctl00_CommentList_NameLink_9" target="_blank">Grayson[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_363104" class="blog_comment_body">我比较喜欢你写的那个，呵呵</div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#427192" class="layer">#11楼</a><a name="427192" id="comment_anchor_427192"></a> <span class="comment_date">2006-06-16 09:36</span> | <a id="ctl00_CommentList_NameLink_10" target="_blank">rotApple[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_427192" class="blog_comment_body">为什么没有提供类似RichTextBox的Find查找功能?
+<br>还有Lines还有GetLineFromChrPos之类的方法,这些都没有怎么做查找和跳到行的功能啊....</div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#427530" class="layer">#12楼</a><a name="427530" id="comment_anchor_427530"></a> <span class="comment_date">2006-06-16 15:17</span> | <a id="ctl00_CommentList_NameLink_11" target="_blank">k[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_427530" class="blog_comment_body">@rotApple 
+<br>-_-|||, ok, I will finish the sample project if I have time.</div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#475304" class="layer">#13楼</a><a name="475304" id="comment_anchor_475304"></a> <span class="comment_date">2006-08-12 23:22</span> | <a id="ctl00_CommentList_NameLink_12" target="_blank">Code.Yang[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_475304" class="blog_comment_body">呵呵,喜欢,
+<br>     你写的程序也不错,我就是在找简单的网页控件找到这个的,正在看看,很正点.
+<br>
+<br>   有点想在html语法方面加强简单的网页编辑,在windows程序用,朋友不知有没给推荐一下. 我找了很久 国内外的都找了,呵呵有点晕,也不知是不是没有找对?
+<br>
+<br>  帮帮忙哦,QQ283875704,呵呵
+<br></div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#477477" class="layer">#14楼</a><a name="477477" id="comment_anchor_477477"></a>[<span class="louzhu">楼主</span>] <span class="comment_date">2006-08-15 15:20</span> | <a id="a_comment_author_477477" href="http://www.cnblogs.com/surfsky/" target="_blank">surfsky</a> <a href="http://msg.cnblogs.com/send/surfsky" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_477477" class="blog_comment_body">你是想要 html语法高亮着色 是吗？这种冬冬我确实没试过，我试试看能否用ICSharpCode.TextEditor 配一个出来</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(477477,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(477477,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_477477_avatar" style="display:none;">http://pic.cnblogs.com/face/11752/20141125101721.png</span><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#886037" class="layer">#15楼</a><a name="886037" id="comment_anchor_886037"></a> <span class="comment_date">2007-09-07 17:26</span> | <a id="ctl00_CommentList_NameLink_14" target="_blank">Timothy[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_886037" class="blog_comment_body">^_^，好东东</div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#1397327" class="layer">#16楼</a><a name="1397327" id="comment_anchor_1397327"></a> <span class="comment_date">2008-12-10 20:09</span> | <a id="ctl00_CommentList_NameLink_15" target="_blank">leiryhp[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_1397327" class="blog_comment_body">楼主可以把例程的源码给俺看看吗（不需要控件的源代码），请发一个到我邮箱，谢谢</div><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#1397844" class="layer">#17楼</a><a name="1397844" id="comment_anchor_1397844"></a>[<span class="louzhu">楼主</span>] <span class="comment_date">2008-12-11 10:37</span> | <a id="a_comment_author_1397844" href="http://www.cnblogs.com/surfsky/" target="_blank">surfsky</a> <a href="http://msg.cnblogs.com/send/surfsky" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_1397844" class="blog_comment_body">@16楼
+<br>源代码文章前面中已经给出链接的，再贴一下吧：)
+<br><a href="http://surfsky.cnblogs.com/Files/surfsky/ICSharpCode.TextEditor051230.rar" target="_new">http://surfsky.cnblogs.com/Files/surfsky/ICSharpCode.TextEditor051230.rar</a>
+<br></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(1397844,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(1397844,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_1397844_avatar" style="display:none;">http://pic.cnblogs.com/face/11752/20141125101721.png</span><br>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#1558195" class="layer">#18楼</a><a name="1558195" id="comment_anchor_1558195"></a><span id="comment-maxId" style="display:none;">1558195</span><span id="comment-maxDate" style="display:none;">2009/6/15 14:32:18</span> <span class="comment_date">2009-06-15 14:32</span> | <a id="ctl00_CommentList_NameLink_17" target="_blank">asato[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_1558195" class="blog_comment_body">如何根据代码字符串获取所在行?
+<br>
+<br>能否控制第几行到第几行可编辑,其余不可编辑呢?
+<br>
+<br>望给解答!
+<br>
+<br>我的邮箱CHUANGXIAOCHUN@YAHOO.COM.CN
+<br>
+<br>谢谢</div><br>
+			</div>
+		</div>
+	
+</div><div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" id="lnk_RefreshComments" onclick="return RefreshCommentList();">刷新评论</a><a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="site_nav_under"><a href="http://www.cnblogs.com/" target="_blank" title="开发者的网上家园">博客园首页</a><a href="http://q.cnblogs.com/" target="_blank" title="程序员问答社区">博问</a><a href="http://news.cnblogs.com/" target="_blank" title="IT新闻">新闻</a><a href="http://home.cnblogs.com/ing/" target="_blank">闪存</a><a href="http://job.cnblogs.com/" target="_blank">程序员招聘</a><a href="http://kb.cnblogs.com/" target="_blank">知识库</a></div>
+<div id="opt_under_post"></div>
+<script type="text/javascript">
+    fixPostBodyFormat();
+</script>
+<div id="google_ad_c1" class="c_ad_block"></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/534073/" target="_blank">不怕死？是什么勇气让微软推高价Nokia功能机</a><br> ·  <a href="http://news.cnblogs.com/n/534122/" target="_blank">开灯就上网？万亿级Li-Fi产业尚在实验室阶段</a><br> ·  <a href="http://news.cnblogs.com/n/534133/" target="_blank">阿里巴巴的五大平台野心，让“连接”论成为过去式</a><br> ·  <a href="http://news.cnblogs.com/n/534132/" target="_blank">诺基亚宣布出售HERE地图业务提前至今日完成</a><br> ·  <a href="http://news.cnblogs.com/n/534131/" target="_blank">科学家研发微型粒子加速器：体积仅相当鞋盒大小</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="google_ad_c2" class="c_ad_block"></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/527814/" target="_blank">从涂鸦到发布——理解API的设计过程</a><br> ·  <a href="http://kb.cnblogs.com/page/531834/" target="_blank">好的架构是进化来的，不是设计来的</a><br> ·  <a href="http://kb.cnblogs.com/page/532236/" target="_blank">被误解的MVC和被神化的MVVM</a><br> ·  <a href="http://kb.cnblogs.com/page/530046/" target="_blank">再谈设计和编码</a><br> ·  <a href="http://kb.cnblogs.com/page/531270/" target="_blank">什么时候应该避免写代码注释？</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+$(function () {
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 200);
+});
+</script>
+</div>
+
+			</div>
+			<div id="footer">
+				
+<!--done-->
+Copyright ©2015 surfsky
+			</div>
+		</div>
+	</div>
+	<div id="left">
+		<div id="left_content">
+			
+<!--done-->
+<!-- <h1 class="listtitle">公告</h1> -->
+<div class="newsItem">
+	<div id="blog-news">精于斯，乐于斯。
+<embed src="http://www.clocklink.com/Clocks/0003P-Green.swf?Place=Cloudy Clock&amp;TimeZone=CCT" width="180" height="200" wmode="transparent" type="application/x-shockwave-flash">
+<!----><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/surfsky/">surfsky</a><br>园龄：<a href="http://home.cnblogs.com/u/surfsky/" title="入园时间：2005-11-24">10年</a><br>粉丝：<a href="http://home.cnblogs.com/u/surfsky/followers/">59</a><br>关注：<a href="http://home.cnblogs.com/u/surfsky/followees/">1</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="cnblogs.UserManager.FollowBlogger(&#39;4248360b-63cf-dd11-9e4d-001cf0cd104b&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2005/11/01&#39;);return false;">&lt;</a></td><td align="center">2005年12月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2006/01/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">27</td><td class="CalOtherMonthDay" align="center">28</td><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td align="center">1</td><td align="center">2</td><td class="CalWeekendDay" align="center">3</td></tr><tr><td class="CalWeekendDay" align="center">4</td><td align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center">9</td><td class="CalWeekendDay" align="center">10</td></tr><tr><td class="CalWeekendDay" align="center">11</td><td align="center"><a href="http://www.cnblogs.com/surfsky/archive/2005/12/12.html"><u>12</u></a></td><td align="center">13</td><td align="center">14</td><td align="center">15</td><td align="center">16</td><td class="CalWeekendDay" align="center">17</td></tr><tr><td class="CalWeekendDay" align="center">18</td><td align="center"><a href="http://www.cnblogs.com/surfsky/archive/2005/12/19.html"><u>19</u></a></td><td align="center">20</td><td align="center"><a href="http://www.cnblogs.com/surfsky/archive/2005/12/21.html"><u>21</u></a></td><td align="center">22</td><td align="center">23</td><td class="CalWeekendDay" align="center">24</td></tr><tr><td class="CalWeekendDay" align="center">25</td><td align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center"><a href="http://www.cnblogs.com/surfsky/archive/2005/12/29.html"><u>29</u></a></td><td align="center"><a href="http://www.cnblogs.com/surfsky/archive/2005/12/30.html"><u>30</u></a></td><td class="CalWeekendDay" align="center">31</td></tr><tr><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script></div>
+			
+				<div id="leftcontentcontainer">
+					<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/surfsky/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/surfsky/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/surfsky/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/surfsky/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/surfsky/tag/" title="我的博客的标签列表">我的标签</a></li>
+<li><a id="itemListLink" onclick="this.blur();WarpClass(&#39;itemListLink&#39;, &#39;itemListLin_con&#39;);return false;" href="http://surfsky.cnblogs.com/archive/2005/12/30/308517.html#">更多链接</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block">
+<div class="catListTag">
+<h3 class="catListTitle">我的标签</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/surfsky/tag/ASP.NET%20MVC%20SKIN%20%E6%8D%A2%E8%82%A4/">ASP.NET MVC SKIN 换肤</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/exfat/">exfat</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/Git%20gitblit%20tortoiseGit%20msysgit%20gitSourceControl/">Git gitblit tortoiseGit msysgit gitSourceControl</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/javascript%20oo%20%E7%B1%BB%20%E5%AF%B9%E8%B1%A1%20%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/">javascript oo 类 对象 命名空间</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/json%20soap%20xml%20webservice/">json soap xml webservice</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/MVC%20ASP.NET/">MVC ASP.NET</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/MVC%20ASP.NET%20Razor/">MVC ASP.NET Razor</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/MVC%20Razor%20ASP.NET/">MVC Razor ASP.NET</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/qml%20ajax/">qml ajax</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/qml%20chart%20qchart/">qml chart qchart</a>(1)</li><li><a href="http://www.cnblogs.com/surfsky/tag/">更多</a></li>
+</ul>
+</div></div><div id="sidebar_categories">
+<!--done-->
+
+		<h1 class="catListTitle">随笔分类</h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_0" class="listitem" href="http://www.cnblogs.com/surfsky/category/41696.html">日子(3)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_1" class="listitem" href="http://www.cnblogs.com/surfsky/category/43168.html">.NET(15)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_2" class="listitem" href="http://www.cnblogs.com/surfsky/category/43169.html">.NET组件控件(16)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_3" class="listitem" href="http://www.cnblogs.com/surfsky/category/44399.html">IT新闻(1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_4" class="listitem" href="http://www.cnblogs.com/surfsky/category/616124.html">Qt(13)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_5" class="listitem" href="http://www.cnblogs.com/surfsky/category/191070.html">报表开发(1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_6" class="listitem" href="http://www.cnblogs.com/surfsky/category/43170.html">代码生成器(1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_7" class="listitem" href="http://www.cnblogs.com/surfsky/category/43171.html">工作流引擎 </a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_8" class="listitem" href="http://www.cnblogs.com/surfsky/category/43172.html">建模与快速开发 (5)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_9" class="listitem" href="http://www.cnblogs.com/surfsky/category/43174.html">数据库 (6)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_10" class="listitem" href="http://www.cnblogs.com/surfsky/category/61905.html">杂项(12)</a></li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">随笔档案</h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_0" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2015/03.html">2015年3月 (4)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_1" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2015/02.html">2015年2月 (6)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_2" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2014/12.html">2014年12月 (2)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_3" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2014/09.html">2014年9月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_4" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2014/06.html">2014年6月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_5" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2013/03.html">2013年3月 (3)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_6" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2012/11.html">2012年11月 (2)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_7" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2012/10.html">2012年10月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_8" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2012/09.html">2012年9月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_9" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2010/12.html">2010年12月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_10" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2010/11.html">2010年11月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_11" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2010/10.html">2010年10月 (6)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_12" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2010/08.html">2010年8月 (7)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_13" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2010/06.html">2010年6月 (3)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_14" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2009/12.html">2009年12月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_15" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2009/11.html">2009年11月 (2)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_16" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2009/05.html">2009年5月 (2)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_17" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2008/12.html">2008年12月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_18" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2008/08.html">2008年8月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_19" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2008/07.html">2008年7月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_20" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2007/12.html">2007年12月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_21" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2007/06.html">2007年6月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_22" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2007/05.html">2007年5月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_23" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2007/03.html">2007年3月 (2)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_24" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2007/01.html">2007年1月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_25" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2006/12.html">2006年12月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_26" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2006/11.html">2006年11月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_27" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2006/10.html">2006年10月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_28" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2006/09.html">2006年9月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_29" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2006/08.html">2006年8月 (3)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_30" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2006/06.html">2006年6月 (5)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_31" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2006/03.html">2006年3月 (2)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_32" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2006/02.html">2006年2月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_1_Link_33" class="listitem" href="http://www.cnblogs.com/surfsky/archive/2005/12.html">2005年12月 (7)</a></li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">文章分类</h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="CatList_LinkList_2_Link_0" class="listitem" href="http://www.cnblogs.com/surfsky/category/47780.html">.NET(1)</a></li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">相册</h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="CatList_LinkList_3_Link_0" class="listitem" href="http://www.cnblogs.com/surfsky/gallery/47781.html" rel="nofollow">回忆</a></li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">Blogs</h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="CatList_LinkList_4_Link_0" class="listitem" href="http://ltp.cnblogs.com/" rel="nofollow" target="_blank">DbToCode</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_4_Link_1" class="listitem" href="http://blog.csdn.net/upto/category/52286.aspx" target="_blank">RapidTier</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_4_Link_2" class="listitem" href="http://tintown.cnblogs.com/archive/2005/12/05/291113.html" target="_blank">SmartPersistenceLayer</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_4_Link_3" class="listitem" href="http://unruledboy.cnblogs.com/" rel="nofollow" target="_blank">灵感之源</a></li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">NET WebSite</h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="CatList_LinkList_5_Link_0" class="listitem" href="http://www.asp.net/" rel="nofollow" target="_blank">ASP.NET</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_5_Link_1" class="listitem" href="http://www.codeproject.com/" rel="nofollow" target="_blank">CodeProject</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_5_Link_2" class="listitem" href="http://www.csdn.com/" rel="nofollow" target="_blank">CSDN</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_5_Link_3" class="listitem" href="http://www.godotnet.com/" rel="nofollow" target="_blank">GoDotNet</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_5_Link_4" class="listitem" href="http://msdn.microsoft.com/library/chs/default.asp" rel="nofollow" target="_blank">MSDN</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_5_Link_5" class="listitem" href="http://www.sourceforge.net/" rel="nofollow" target="_blank">SourceForge</a></li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">Special</h1>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="CatList_LinkList_6_Link_0" class="listitem" href="http://www.icsharpcode.com/" rel="nofollow" target="_blank">icsharpcode.com</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_6_Link_1" class="listitem" href="http://www.spextreme.com/osp/open_license/release_notes.aspx" rel="nofollow">Open License</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_6_Link_2" class="listitem" href="http://www.python.cn/" rel="nofollow">Python</a></li>
+			
+				</ul>
+			
+	
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"><ul>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/surfsky/p/4309299.html#3192597">1. Re:Qt qml treeview 树控件</a></li>
+    <li class="recent_comment_body">如果需要clear()该如何改呢？</li>
+    <li class="recent_comment_author">--xsjqqq123</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/surfsky/p/4290739.html#3182395">2. Re:qt qml qchart 图表组件</a></li>
+    <li class="recent_comment_body">请教这个怎么用啊？编译时总提示：Chart is not a type</li>
+    <li class="recent_comment_author">--Goldman</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/surfsky/p/4309299.html#3135486">3. Re:Qt qml treeview 树控件</a></li>
+    <li class="recent_comment_body">mark 下，写得不错</li>
+    <li class="recent_comment_author">--蚂蚁跳楼</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/surfsky/p/4290739.html#3129903">4. Re:qt qml qchart 图表组件</a></li>
+    <li class="recent_comment_body">@findumars引用牛叉！必须顶一下。但是请教这个js文件会被编译到exe文件里去吗？弄到qrc文件里面去，就会编译到exe里面去...</li>
+    <li class="recent_comment_author">--surfsky</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/surfsky/p/4290739.html#3129559">5. Re:qt qml qchart 图表组件</a></li>
+    <li class="recent_comment_body">牛叉！必须顶一下。但是请教这个js文件会被编译到exe文件里去吗？</li>
+    <li class="recent_comment_author">--findumars</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/surfsky/archive/2008/08/20/1272104.html">1. Infragistics netadvantage UltraGrid (UltraWinGrid) 编程手记(18733)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2007/03/13/673620.html">2. XML序列化与反序列化 整理文档(17189)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2007/03/13/673625.html">3. 用 System.Xml 读写XML 整理文档(12881)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2006/03/12/348418.html">4. 将ASP.NET用户控件转化为自定义控件(6485)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2013/03/12/2955851.html">5. 我的空间哪里去了？注意exfat格式设置的陷阱(6211)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/surfsky/archive/2006/06/29/438762.html">1. Gentle.NET 使用文档(26)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2006/03/09/346738.html">2. 发布WebFtp 控件（ASP.NET控件，用以web方式进行文件上下传操作） (25)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2008/08/20/1272104.html">3. Infragistics netadvantage UltraGrid (UltraWinGrid) 编程手记(25)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2005/12/30/308517.html">4. 爱上语法高亮控件ICSharpCode.TextEditor ~o~(18)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2009/05/13/1456153.html">5. 发布一个小工具（XNotePad），可以分页浏览很大的文本文件，速度理想(15)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div class="RecentComment">
+	<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/surfsky/archive/2013/03/18/2965915.html">1. 用GitBlit 和 VS GitSourceControlProvider 搭建基于 Http(s) 的 Git 工作平台(5)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2007/03/13/673620.html">2. XML序列化与反序列化 整理文档(4)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2008/08/20/1272104.html">3. Infragistics netadvantage UltraGrid (UltraWinGrid) 编程手记(4)</a></li><li><a href="http://www.cnblogs.com/surfsky/archive/2010/10/12/1848701.html">4. ASP.NET MVC 换肤方案(3)</a></li><li><a href="http://www.cnblogs.com/surfsky/p/3998391.html">5. Qml 写的弹出层控件(2)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+				</div>
+			
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+
+
+</body></html>

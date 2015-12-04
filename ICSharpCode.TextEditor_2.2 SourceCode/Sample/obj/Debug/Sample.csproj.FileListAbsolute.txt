@@ -1,0 +1,9 @@
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\Sample\obj\Debug\Sample.exe
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\Sample\obj\Debug\Sample.pdb
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\Sample\bin\Debug\Sample.exe
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\Sample\bin\Debug\Sample.pdb
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\Sample\bin\Debug\ICSharpCode.TextEditor.dll
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\Sample\obj\Debug\Sample.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\Sample\obj\Debug\Sample.FrmSample.resources
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\Sample\obj\Debug\Sample.Properties.Resources.resources
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\Sample\obj\Debug\Sample.csproj.GenerateResource.Cache

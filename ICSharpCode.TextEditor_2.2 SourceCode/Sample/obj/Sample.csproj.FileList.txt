@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Sample.FrmSample.resources
+obj\Debug\Sample.Properties.Resources.resources
+obj\Debug\Sample.csproj.GenerateResource.Cache
+bin\Debug\Sample.exe
+bin\Debug\Sample.pdb
+bin\Debug\ICSharpCode.TextEditor.dll
+obj\Debug\Sample.exe
+obj\Debug\Sample.pdb

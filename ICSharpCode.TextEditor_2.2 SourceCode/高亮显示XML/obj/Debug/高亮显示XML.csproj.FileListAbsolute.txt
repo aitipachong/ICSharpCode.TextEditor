@@ -1,0 +1,10 @@
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\bin\Debug\高亮显示XML.exe.config
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\bin\Debug\高亮显示XML.exe
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\bin\Debug\高亮显示XML.pdb
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\obj\Debug\高亮显示XML.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\obj\Debug\高亮显示XML.MainForm.resources
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\obj\Debug\高亮显示XML.Properties.Resources.resources
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\obj\Debug\高亮显示XML.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\obj\Debug\高亮显示XML.exe
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\obj\Debug\高亮显示XML.pdb
+C:\Users\admin\Desktop\ICSharpCode.TextEditor_2.2\高亮显示XML\bin\Debug\ICSharpCode.TextEditor.dll
